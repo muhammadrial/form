@@ -15,40 +15,41 @@
 
 
             <!-- Name -->
-            <div class="">
-                <label for="name" class="block text-sm font-medium text-purple-500">Name</label>
-                <div class="nameInput flex flex-row justify-center items-center gap-2">
-                <input type="text" name="name" placeholder="First" required class="mt-1 w-full px-3 py-2 border border-purple-400 rounded-md shadow-sm ">
+            <div class="flex flex-col md:flex-row justify-center items-center  gap-2">
 
-                
-                <input type="text" name="name" required placeholder="Last" class="mt-1 w-full px-3 py-2 border border-purple-400 rounded-md shadow-sm ">
+                <div class="w-full md:w-1/2" >
+                    <label for="name" class="block text-sm font-medium text-purple-500">Name</label>
+                    <input type="text" name="name" placeholder="First" required class="mt-1 w-full px-3 py-2 border border-purple-400 rounded-md shadow-sm ">
+                </div>
+                <div class="w-full md:w-1/2" >
+                    <input type="text" name="name" required placeholder="Last" class="mt-1 md:mt-[22px] w-full px-3 py-2 border border-purple-400 rounded-md shadow-sm ">
                 </div>
             </div>
 
             <!-- Email & Phone -->
-            <div class="emailPhone flex flex-row justify-center items-center gap-2">
-                <div class="w-1/2" >
+            <div class="emailPhone flex flex-col md:flex-row justify-center items-center gap-2">
+                <div class="w-full md:w-1/2" >
                     <label for="Email" class="block text-sm font-medium text-purple-500">Email</label>
                     <input type="email"  name="Email" required class="mt-1 block w-full px-3 py-2 border border-purple-400 rounded-md shadow-sm ">
                 </div>
 
 
-                <div class="w-1/2">
+                <div class="w-full md:w-1/2">
                     <label for="phone" class="block text-sm font-medium text-purple-500">Phone</label>
                     <input type="tel"  name="phone" required placeholder="### ### ####" class="mt-1 block w-full px-3 py-2 border border-purple-400 rounded-md shadow-sm ">
                 </div>
             </div>
 
             <!-- Date & Time -->
-            <div class="dateTime flex flex-row justify-between  items-center gap-2 ">
+            <div class="dateTime flex flex-col md:flex-row justify-between items-center gap-2 ">
 
-                <div class="w-1/2">
+                <div class="w-full md:w-1/2">
                     <label for="date" class="block text-sm font-medium text-purple-500">Reservation Date</label>
                     <input type="date"  name="date" required class="mt-1  w-full px-3 py-2 border border-purple-400 rounded-md shadow-sm text-purple-300 ">
                 </div>
     
                
-                <div class="w-1/2" >
+                <div class="w-full md:w-1/2" >
                     <label for="time" class="block text-sm font-medium text-purple-500">Reservation Time</label>
                     <input type="time"  name="time" required class="mt-1 w-full px-3 py-2 border border-purple-400 rounded-md shadow-sm text-purple-300 ">
                 </div>
@@ -56,21 +57,21 @@
             </div>
 
             <!-- Number of Persons -->
-            <div>
-                <label for="persons" class="block text-sm font-medium text-purple-500">How many persons will you be with?</label>
+            <div class="flex flex-col  justify-center  items-start ">
+                <label for="persons" class="block text-sm font-medium text-purple-500 ">How many persons will you be with?</label>
                 <input type="number"  name="persons" required class="mt-1 block w-full px-3 py-2 border border-purple-400 rounded-md shadow-sm ">
             </div>
 
 
             <!-- Notes -->
 
-            <div>
-                <label for="notes" class="block text-sm font-medium text-purple-500">Notes</label>
+            <div class="flex flex-col  justify-center  items-start ">
+                <label for="notes" class=" text-sm font-medium text-purple-500 ">Notes</label>
                 <textarea id="notes" name="notes" rows="3" class="mt-1 w-full px-3 py-2 border border-purple-400 rounded-md shadow-sm "></textarea>
             </div>
 
             <!-- Submit Button -->
-            <div>
+            <div class="">
                 <button type="submit" class="w-full bg-indigo-600 text-white py-2 px-4 rounded-md hover:bg-indigo-700 ">
                     Submit Reservation
                 </button>
